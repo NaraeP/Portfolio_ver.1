@@ -72,6 +72,22 @@
   }
 
   /**
+   * to next button
+   */
+  let tonext = select('.to-next')
+  if (tonext) {
+    const toggleTonext = () => {
+      if (window.scrollY < 100) {
+        tonext.classList.add('active')
+      } else {
+        tonext.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleTonext)
+    onscroll(document, toggleTonext)
+  }
+
+  /**
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {

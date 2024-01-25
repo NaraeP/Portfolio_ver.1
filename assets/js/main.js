@@ -77,7 +77,7 @@
   let tonext = select('.to-next')
   if (tonext) {
     const toggleTonext = () => {
-      if (window.scrollY < 100) {
+      if (window.scrollY < 136) {
         tonext.classList.add('active')
       } else {
         tonext.classList.remove('active')

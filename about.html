@@ -51,13 +51,30 @@
       font-weight: 600;
     }
 
-    #about-me {
+    /* #about-me {
       width: 70%;
       margin: 0 auto;
-    }
+    } */
 
     #first-page {
       height: 100vh;
+    }
+
+    .row.about {
+      padding-top: 60px;
+    }
+
+    /* 반응형 */
+    @media (min-width: 992px) {
+      #about-me {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .row.about {
+        width: 70%;
+        margin: 0 auto;
+      }
     }
 
     /* next page button */
@@ -72,7 +89,13 @@
       width: 40px;
       height: 40px;
       border-radius: 50px;
-      transition: all 0.4s;
+      transition: all 0.3s;
+    }
+
+    .to-next i {
+      font-size: 24px;
+      color: #FFF;
+      line-height: 0;
     }
 
     .to-next.active {
@@ -139,42 +162,67 @@
                 생각을 현실로 구현할 수 있다는 개발의 매력에 빠져 개발자를 꿈꾸게 되었습니다. 사용자를 고려하는 웹 개발자가 되기 위해 모든 것에 호기심을 갖고 공부하며 하나하나 제대로 익히고 사용하려고 노력하고 있습니다.
               </p>
             </div>
+
+            <!-- <div class="col-lg-6">
+              <h3 class="resume-title">Profile</h3>
+              <div id="profile" class="resume-item">
+                <p><b>Name: </b>박나래</p>
+                <p><b>Phone: </b>+82 10 3004 4386</p>
+                <p><b>Email: </b>naraep23@gmail.com</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+              <h3 class="resume-title">Certificate</h3>
+              <div id="certificate" class="resume-item">
+                <p><span>2022</span> 컴퓨터활용능력 1급 (국가기술자격)</p>
+                <p><span>2021</span> 무역영어 1급 (국가공인자격)</p>
+                <p><span>2020</span> 운전면허 2종 보통 (국가전문자격)</p>
+              </div>
+            </div> -->
+
+
           </div>
 
-          <a href="#" class="to-next d-flex align-items-center justify-content-center"><i class="bi bi-arrow-down-short"></i></a>
+          <div class="row about">
+
+            <div class="col-lg-6">
+              <h3 class="resume-title">Profile</h3>
+              <div id="profile" class="resume-item">
+                <p><b>Name: </b>박나래</p>
+                <p><b>Phone: </b>+82 10 3004 4386</p>
+                <p><b>Email: </b>naraep23@gmail.com</p>
+              </div>
+            </div>
+          
+            <div class="col-lg-6">
+              <h3 class="resume-title">Certificate</h3>
+              <div id="certificate" class="resume-item">
+                <p><span>2022</span> 컴퓨터활용능력 1급 (국가기술자격)</p>
+                <p><span>2021</span> 무역영어 1급 (국가공인자격)</p>
+                <p><span>2020</span> 운전면허 2종 보통 (국가전문자격)</p>
+              </div>
+            </div>
+
+        </div>
+
+          <a href="javascript:window.scrollTo(0, 910);" class="to-next d-flex align-items-center justify-content-center" onclick="addPadding()"><i class="bi bi-arrow-down-short"></i></a>
         </div> <!-- End first-page section -->
 
+        <!-- second-page section -->
         <!-- Resume -->
         <div class="row resume">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Profile</h3>
-            <div id="profile" class="resume-item">
-              <p><b>Name: </b>박나래</p>
-              <p><b>Phone: </b>+82 10 3004 4386</p>
-              <p><b>Email: </b>naraep23@gmail.com</p>
-            </div>
-
-            <h3 class="resume-title">Certificate</h3>
-            <div id="certificate" class="resume-item">
-              <p><span>2022</span> 컴퓨터활용능력 1급 (국가기술자격)</p>
-              <p><span>2021</span> 무역영어 1급 (국가공인자격)</p>
-              <p><span>2020</span> 운전면허 2종 보통 (국가전문자격)</p>
-            </div>
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>쌍용교육센터 Java Full-Stack 개발자 양성 과정</h4>
+            <h5>2023.07.14 - 2023.12.27</h5>
+            <p>Java 기반의 Full-Stack 개발자 양성 과정을 이수했습니다. Java의 기본 문법 및 Oracle을 사용하여 데이터베이스 설계와 작업에 대해 학습했습니다.</p>
+            <p>HTML, CSS, JavaScript를 활용하여 Front-End 개발을, Servlet/JSP 및 Spring 프레임워크를 활용하여 Back-End 개발을 경험했습니다.</p>
           </div>
-
-          <div class="col-lg-6">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>쌍용교육센터 Java Full-Stack 개발자 양성 과정</h4>
-              <h5>2023.07.14 - 2023.12.27</h5>
-              <p>Java 기반의 Full-Stack 개발자 양성 과정을 이수했습니다. Java의 기본 문법 및 Oracle을 사용하여 데이터베이스 설계와 작업에 대해 학습했습니다.</p>
-              <p>HTML, CSS, JavaScript를 활용하여 Front-End 개발을, Servlet/JSP 및 Spring 프레임워크를 활용하여 Back-End 개발을 경험했습니다.</p>
-            </div>
-            <div class="resume-item">
-              <h4>강서대학교 중국어과 & 吉林师范大学</h4>
-              <h5>2012.03 - 2016.02</h5>
-              <p>복수학위제도를 통해 한국의 본교와 중국의 대학교에서 수학한 뒤 양 대학에서 학위를 취득하였습니다. 본 경험을 바탕으로 여러 환경에서 다양한 사람들과 소통하는 것에 대한 두려움을 깨고 점차 즐기게 되었습니다.</p>
-            </div>
+          <div class="resume-item">
+            <h4>강서대학교 중국어과 & 吉林师范大学</h4>
+            <h5>2012.03 - 2016.02</h5>
+            <p>복수학위제도를 통해 한국의 본교와 중국의 대학교에서 수학한 뒤 양 대학에서 학위를 취득하였습니다. 본 경험을 바탕으로 여러 환경에서 다양한 사람들과 소통하는 것에 대한 두려움을 깨고 점차 즐기게 되었습니다.</p>
           </div>
         </div>
 
@@ -229,6 +277,17 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Script -->
+  <script>
+
+    window.addEventListener('scroll', () => {
+      console.log(window.scrollY);
+    });
+
+
+
+  </script>
 
 </body>
 

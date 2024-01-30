@@ -27,6 +27,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
   <!-- =======================================================
   * Template Name: Kelly
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -56,8 +59,10 @@
       margin: 0 auto;
     } */
 
-    #first-page {
-      height: 100vh;
+    @media (min-width: 975px) {
+      #first-page {
+        height: 100vh;
+      }
     }
 
     .row.about {
@@ -206,7 +211,8 @@
 
         </div>
 
-          <a href="javascript:window.scrollTo(0, 910);" class="to-next d-flex align-items-center justify-content-center" onclick="addPadding()"><i class="bi bi-arrow-down-short"></i></a>
+          <!-- <a href="javascript:window.scrollTo(0, 910);" class="to-next d-flex align-items-center justify-content-center" onclick="addPadding()"><i class="bi bi-arrow-down-short"></i></a> -->
+          <a href="javascript:void(0);" class="to-next d-flex align-items-center justify-content-center" onclick="scrollDown()" id="scroll-btn"><i class="bi bi-arrow-down-short"></i></a>
         </div> <!-- End first-page section -->
 
         <!-- second-page section -->
@@ -285,9 +291,26 @@
       console.log(window.scrollY);
     });
 
+    let bodyWidth = document.body.clientWidth;
 
+    function scrollDown() {
+      if (bodyWidth >= 1200) {
+        window.scrollTo(0, 910);
+      } else if (bodyWidth >= 1000) {
+        window.scrollTo(0, 778);
+      } else {
+        window.scrollTo(0, 760);
+      }
+    }
 
-  </script>
+    //페이지 로드 시 width가 975px 미만이면 스크롤 버튼 없애기
+    $(document).ready(function() {
+        if (bodyWidth < 975) {
+          $('#scroll-btn').css('visibility', 'hidden');
+        }
+    });
+
+</script>
 
 </body>
 

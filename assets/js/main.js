@@ -72,16 +72,19 @@
   }
 
   /**
-   * to next button
+   * to next button by narae
    */
   let tonext = select('.to-next')
+
   if (tonext) {
     const toggleTonext = () => {
+
       if (window.scrollY < 136) {
         tonext.classList.add('active')
       } else {
         tonext.classList.remove('active')
       }
+
     }
     window.addEventListener('load', toggleTonext)
     onscroll(document, toggleTonext)

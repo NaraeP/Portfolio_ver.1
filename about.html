@@ -107,6 +107,10 @@
       visibility: visible;
       opacity: 1;
     }
+
+    .white-space {
+      margin: 30px;
+    }
   </style>
 </head>
 
@@ -212,12 +216,14 @@
         </div>
 
           <!-- <a href="javascript:window.scrollTo(0, 910);" class="to-next d-flex align-items-center justify-content-center" onclick="addPadding()"><i class="bi bi-arrow-down-short"></i></a> -->
-          <a href="javascript:void(0);" class="to-next d-flex align-items-center justify-content-center" onclick="scrollDown()" id="scroll-btn"><i class="bi bi-arrow-down-short"></i></a>
+          <!-- <a href="javascript:void(0);" class="to-next d-flex align-items-center justify-content-center" onclick="scrollDown()" id="scroll-btn"><i class="bi bi-arrow-down-short"></i></a> -->
+          <a href="#second-page" class="to-next d-flex align-items-center justify-content-center" onclick="" id="scroll-btn"><i class="bi bi-arrow-down-short"></i></a>
         </div> <!-- End first-page section -->
 
         <!-- second-page section -->
         <!-- Resume -->
-        <div class="row resume">
+        <div id="second-page" class="row resume">
+          <div class="white-space"></div>
           <h3 class="resume-title">Education</h3>
           <div class="resume-item">
             <h4>쌍용교육센터 Java Full-Stack 개발자 양성 과정</h4>
@@ -287,9 +293,9 @@
   <!-- Script -->
   <script>
 
-    window.addEventListener('scroll', () => {
-      console.log(window.scrollY);
-    });
+    // window.addEventListener('scroll', () => {
+    //   console.log(window.scrollY);
+    // });
 
     let bodyWidth = document.body.clientWidth;
 

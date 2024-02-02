@@ -70,27 +70,70 @@
       width: 25%;
     }
 
-    table tr {
+    #docs tr {
       padding: 10px;
     }
 
-    table th {
+    #docs th {
       text-align: center;
     }
 
-    table tr:first-child {
+    #docs tr {
       border-bottom: 1px solid #999;
     }
 
-    th, td {
+    #docs tr:last-child, #docs tr:nth-child(5) {
+      border-bottom: 0;
+    }
+
+    #docs tr:nth-child(5) > th:first-child {
+      border-bottom: 1px solid #999;
+    }
+
+    #docs th, #docs td {
       border-right: 1px solid #999;
     }
 
-    th:last-child, td:last-child {
+    #docs th:last-child, #docs td:last-child {
       border-right: 0;
     }
 
-    table img {
+    #docs img {
+      max-width: 100%;
+    }
+
+    /* 빈칸 border 제거 */
+    #docs tr:nth-child(5) > th:nth-child(2) {
+      border-right: 0;
+    }
+    
+    #docs tr:nth-child(6) > td:nth-child(2) {
+      border-right: 0;
+    }
+
+
+    /* 개발 과정 img */
+    #process tr {
+      padding: 10px;
+    }
+
+    #process th {
+      text-align: center;
+    }
+
+    #process tr:first-child {
+      border-bottom: 1px solid #999;
+    }
+
+    #process th, #process td {
+      border-right: 1px solid #999;
+    }
+
+    #process th:last-child, #process td:last-child {
+      border-right: 0;
+    }
+
+    #process img {
       max-width: 100%;
     }
   </style>
@@ -286,7 +329,40 @@
               <li>개발문서</li>
               <li>요약본</li>
             </ul>
-            <div class="project-docs">
+            <table id="docs">
+              <tr>
+                <th>기획서</th>
+                <th>요구분석서</th>
+                <th>순서도</th>
+              </tr>
+              <tr>
+                <td><img src="assets/img/projects/ddland/기획서작성.PNG" alt=""></td>
+                <td><img src="assets/img/projects/ddland/요구분석서작성.PNG" alt=""></td>
+                <td><img src="assets/img/projects/ddland/순서도작성.PNG" alt=""></td>
+              </tr>
+              <tr>
+                <th>데이터베이스 설계</th>
+                <th>화면 설계서</th>
+                <th>DDL</th>
+              </tr>
+              <tr>
+                <td><img src="assets/img/projects/ddland/데이터베이스설계.PNG" alt=""></td>
+                <td><img src="assets/img/projects/ddland/화면설계서작성.PNG" alt=""></td>
+                <td><img src="assets/img/projects/ddland/DDL작성.PNG" alt=""></td>
+              </tr>
+              <tr>
+                <th>DML</th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td><img src="assets/img/projects/ddland/DML작성.PNG" alt=""></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+
+            <!-- <div class="project-docs">
               <div class="row">
                 <img src="assets/img/projects/ddland/기획서작성.PNG" alt="">
                 <img src="assets/img/projects/ddland/요구분석서작성.PNG" alt="">
@@ -298,9 +374,8 @@
                 <img src="assets/img/projects/ddland/DDL작성.PNG" alt="">
                 <img src="assets/img/projects/ddland/DML작성.PNG" alt="">
               </div>
-              <div>
-              </div>
-            </div>
+            </div> -->
+
           </div>
 
           <div class="project-desc">
@@ -310,7 +385,7 @@
               <li>Git 협업</li>
               <li>팀 회의</li>
             </ul>
-            <table>
+            <table id="process">
               <tr>
                 <th>프로젝트 구조 설계</th>
                 <th>Git 협업</th>

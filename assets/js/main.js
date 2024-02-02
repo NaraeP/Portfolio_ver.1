@@ -210,6 +210,26 @@
       clickable: true
     }
   });
+  
+  /**
+   * Portfolio details function slider by narae
+   */
+  new Swiper('.function-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: false,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+      nextEl : '.swiper-button-next',
+		  prevEl : '.swiper-button-prev'
+    }
+  });
+
+  
 
   /**
    * Skills animation

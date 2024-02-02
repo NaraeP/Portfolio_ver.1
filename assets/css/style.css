@@ -6,6 +6,27 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+/* Add Font by narae */
+@font-face {
+  font-family: 'D2Coding';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -1099,6 +1120,7 @@ section {
 .portfolio-details .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
+  border-radius: 5px;
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -1119,8 +1141,10 @@ section {
   margin-top: 10px;
 }
 
+/* padding 수정 by narae */
 .portfolio-details .portfolio-description {
-  padding-top: 30px;
+  /* padding-top: 30px; */
+  padding: 30px 20px 0 20px;
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -1131,6 +1155,11 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+
+/* Add CSS by narae */
+.project-desc {
+  padding-top: 30px;
 }
 
 /*--------------------------------------------------------------

@@ -219,7 +219,7 @@
     loop: true,
     autoplay: false,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.function-swiper-pagination',
       type: 'bullets',
       clickable: true
     },

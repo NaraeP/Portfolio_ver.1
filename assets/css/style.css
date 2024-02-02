@@ -1162,6 +1162,11 @@ section {
   padding-top: 30px;
 }
 
+/* function slider CSS by narae */
+.function-swiper-pagination {
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/

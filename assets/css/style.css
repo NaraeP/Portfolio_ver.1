@@ -1058,8 +1058,10 @@ section {
   opacity: 1;
 }
 
+/* scale 안되게 수정 by narae */
 .portfolio .portfolio-wrap:hover img {
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
+  transform: scale(1);
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info {

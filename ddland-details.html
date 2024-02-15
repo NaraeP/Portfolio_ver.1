@@ -63,27 +63,46 @@
       font-family: 'SUIT-Regular';
       font-weight: 900;
     }
+    
+    #main {
+      margin-top: 0;
+    }
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
 
     /* 프로젝트 상단 요약 */
     .portfolio-info span {
       color: red;
     }
 
-    /* 주요 구현 기능 */
-    table.functions tr {
-      padding: 10px;
+    /* 주요 구현 기능 슬라이드 */
+    .portfolio-details-slider .swiper-button-prev,
+    .portfolio-details-slider .swiper-button-next,
+    .function-slider .swiper-button-prev,
+    .function-slider .swiper-button-next {
+      background: rgba(0, 0, 0, .5);
+      padding: 15px;
+      border-radius: 50%;
+      color: #FFF;
+      width: 0;
+      height: 0;
     }
 
-    table.functions th {
-      text-align: center;
+    .portfolio-details-slider .swiper-button-next::after,
+    .portfolio-details-slider .swiper-button-prev::after {
+      font-size: 10px;
     }
 
-    table.functions tr td {
-      width: 50%;
+    .function-slider .swiper-button-next::after,
+    .function-slider .swiper-button-prev::after {
+      font-size: 15px;
     }
 
-    table.functions img {
-      max-width: 100%;
+    .swiper-pagination-bullet {
+      background: #999;
     }
 
 
@@ -175,81 +194,9 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/DDLand_main.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/Attraction_운영.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/Attraction_운휴.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/어트랙션detail.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/어트랙션detail2.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/어트랙션detail3.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/어트랙션예약.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/Festival_list.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/Movie_list.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/Movie_theater_list.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/Photozone_list.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/Admin_Attraction_list.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/Admin_attraction_add.png" alt="">
-                </div>
-                
-                <!-- <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ddland/" alt="">
-                </div> -->
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
+          <div class="col-lg-7">
             <div class="portfolio-description">
               <h2>DD Land(놀이공원 웹사이트)</h2>
-              <p>
-                Spring Framework를 활용하여 제작한 놀이공원 웹사이트입니다. Servlet/JSP Project로 제작한 웹사이트를 기반으로 기존대비 향상된 관리자/사용자 인터페이스를 제공합니다.
-              </p>
             </div>
 
             <div class="portfolio-info">
@@ -257,6 +204,7 @@
               <ul>
                 <li><strong>프로젝트명</strong>: DD Land</li>
                 <li><strong>분류</strong>: Spring Project</li>
+                <li><strong>주제</strong>: Spring Framework를 활용하여 제작한 놀이공원 웹사이트입니다. Servlet/JSP Project로 제작한 웹사이트를 기반으로 기존대비 향상된 관리자/사용자 인터페이스를 제공합니다.</li>
                 <li><strong>개발 환경</strong>: HTML, CSS, JavaScript, jQuery, JSP, Java, Oracle Database 11g, <span>Spring Tool Suite 3</span>, Bootstrap, SQL Developer, DBeaver, eXERD, Draw.io, Google Drive, Git, GitHub, Sourcetree, <span>AWS(EC2)</span>, Apache Tomcat</li>
                 <li><strong>사용 기술</strong>: <span>Spring MVC Pattern</span>, <span>Spring Security</span>, <span>Ajax</span>, <span>Open API</span>, MyBatis, <span>Elasticsearch</span>, <span>Web Socket</span>, Modal, <span>Restful API</span>, Tiles</li>
                 <li><strong>주요 기능</strong>: 액티비티·샵·티켓·할인·커뮤니티·이용 안내 등 조회 기능, 어트랙션 예약 기능, 어트랙션 추천 기능, 티켓 및 기프트샵 상품 구매 기능, 채팅 기능, 관리자 기능</li>
@@ -268,8 +216,85 @@
                 <!-- <li><strong>URL</strong>: <a href="#">www.example.com</a></li> -->
               </ul>
             </div>
-          </div>
-        </div>
+          </div><!-- end of div.col-lg-7 -->
+
+          <div class="col-lg-5 vertical-center">
+            <div>
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/DDLand_main.png" alt="">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/Attraction_운영.png" alt="">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/Attraction_운휴.png" alt="">
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/어트랙션detail.png" alt="">
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/어트랙션detail2.png" alt="">
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/어트랙션detail3.png" alt="">
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/어트랙션예약.png" alt="">
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/Festival_list.png" alt="">
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/Movie_list.png" alt="">
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/Movie_theater_list.png" alt="">
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/Photozone_list.png" alt="">
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/Admin_Attraction_list.png" alt="">
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/Admin_attraction_add.png" alt="">
+                  </div>
+                  
+                  <!-- <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/" alt="">
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/ddland/" alt="">
+                  </div> -->
+
+                </div>
+                <!-- 기능 구현 슬라이드 네비게이션 버튼 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+              </div><!-- end of div.swiper -->
+            </div>
+          </div><!-- end of div.col-lg-5 -->
+
+        </div><!-- end of div.row -->
 
         <div class="row gy-4">
 
@@ -540,13 +565,21 @@
         <!-- 후기 -->
         <div class="row gy-4">
           <div class="project-desc">
-            <h3>후기</h3>
+            <h3>개발 후기</h3>
             <br>
+            
             <h5>느낀점</h5>
             <p>Final Project인 스프링 프로젝트를 통해서 그동안의 교육 과정에서 배웠던 모든 내용으로 결과물을 만들어서 가장 재미있게 작업에 임했습니다. 특히 AWS를 통해 배포를 진행하며 내가 정말 웹사이트 하나를 만들었다는 뿌듯함을 크게 느꼈습니다.</p>
             <p>협업을 진행하며 팀원과 유사한 기능을 구현하는 경우, 내가 어려움을 느끼는 부분에 대해 팀원들은 어떻게 코드를 작성했는지 비교하며 배울 수 있어서, 혼자 사로 갇힌 생각에서 벗어나 생각해볼 수 있어서 좋은 경험이었습니다.</p>
             <br>
-            <h5>개선사항</h5>
+
+            <h5>아쉬운 점</h5>
+            <ol>
+              <li></li>
+            </ol>
+            <br>
+
+            <h5>추후 개선 필요 사항</h5>
             <ol>
               <li>Elasticsearch의 형태소 분석을 적극적으로 사용하는 검색 기능 구현</li>
               <li>액티비티의 상세 페이지 공간 구성(창에 비해 비어 보이는듯한 느낌)</li>

@@ -41,16 +41,30 @@
     }
 
     /* skill */
+    #skills .row {
+      justify-content: center;
+    }
+
     .skill {
       background: #F1F4F8;
       border-radius: 13px;
       padding: 20px;
       margin: 10px;
       max-width: 48%;
+      display: flex;
+      flex-direction: column;
     }
 
     .row {
       flex-wrap: nowrap;
+    }
+
+    #skills h3 {
+      font-family: 'SUIT-Regular';
+      font-weight: 800;
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 15px 0;
     }
   </style>
 </head>
@@ -100,45 +114,59 @@
         <div class="row">
           <div class="skill">
             <h3>Front-End</h3>
-            <img src="assets/img/skills/html_js_css_logo.png" alt="HTML, CSS, JS">
-            <img src="assets/img/skills/jquery_logo.png" alt="jQuery">
+            <div class="img-box">
+              <img src="assets/img/skills/html5_logo.png" alt="HTML" style="max-width: 90px;">
+              <img src="assets/img/skills/css3_logo.png" alt="CSS" style="max-width: 65px;">
+              <img src="assets/img/skills/javascript_logo.png" alt="JS" style="max-width: 90px;">
+              <img src="assets/img/skills/jquery_logo.png" alt="jQuery" style="max-width: 160px;">
+            </div>
           </div>
-
           <div class="skill">
             <h3>Back-End</h3>
-            <img src="assets/img/skills/java_logo.png" alt="Java" style="max-width: 120px;">
-            <img src="assets/img/skills/spring_logo.png" alt="Spring">
-            <!-- <img src="" alt="SpringBoot"> -->
-            <img src="assets/img/skills/mybatis_logo(with_title).png" alt="MyBatis">
-            <img src="assets/img/skills/rest-api_icon.png" alt="RestAPI" style="max-width: 120px;">
+            <div class="img-box">
+              <img src="assets/img/skills/java_logo.png" alt="Java" style="max-width: 110px;">
+              <img src="assets/img/skills/spring_logo.png" alt="Spring" style="max-width: 130px;">
+              <img src="assets/img/skills/springboot_logo.png" alt="SpringBoot" style="max-width: 120px;">
+              <img src="assets/img/skills/mybatis_logo(with_title).png" alt="MyBatis">
+              <img src="assets/img/skills/rest-api_icon.png" alt="RestAPI" style="max-width: 90px;">
+              <img src="assets/img/skills/elasticsearch_logo.png" alt="Elasticsearch" style="">
+            </div>
           </div>
         </div>
+
         <div class="row">
           <div class="skill">
             <h3>Database</h3>
-            <img src="assets/img/skills/oracle_logo.png" alt="Oracle">
+            <div class="img-box">
+              <img src="assets/img/skills/oracle_logo.png" alt="Oracle">
+            </div>
           </div>
-
           <div class="skill">
             <h3>Tools</h3>
-            <img src="assets/img/skills/eclipse_logo.png" alt="Eclipse">
-            <img src="assets/img/skills/visual-studio-code_logo.png" alt="Visual Studio Code">
-            <img src="assets/img/skills/sqldeveloper_logo.png" alt="SQL Developer" style="max-width: 120px;">
-            <img src="assets/img/skills/dbeaver_logo.png" alt="DBeaver">
+              <div class="img-box">
+                <img src="assets/img/skills/eclipse_logo.png" alt="Eclipse" style="max-width: 120px;">
+                <img src="assets/img/skills/visual-studio-code_logo.png" alt="Visual Studio Code">
+                <img src="assets/img/skills/sqldeveloper_logo.png" alt="SQL Developer" style="max-width: 80px;">
+                <img src="assets/img/skills/dbeaver_logo.png" alt="DBeaver" style="max-width: 120px;">
+              </div>
           </div>
         </div>
 
         <div class="row">
           <div class="skill">
             <h3>Server</h3>
-            <img src="assets/img/skills/apachetomcat_logo.png" alt="Apache Tomcat" style="max-width: 120px;">
-            <img src="assets/img/skills/AWS_logo.png" alt="AWS" style="max-width: 120px;">
+            <div class="img-box">
+              <img src="assets/img/skills/apachetomcat_logo.png" alt="Apache Tomcat" style="max-width: 120px;">
+              <img src="assets/img/skills/AWS_logo.png" alt="AWS" style="max-width: 120px;">
+            </div>
           </div>
           <div class="skill">
             <h3>Version Control Tools</h3>
-            <img src="assets/img/skills/git_logo.png" alt="Git" style="max-width: 120px;">
-            <img src="assets/img/skills/github_logo.png" alt="GitHub">
-            <img src="assets/img/skills/sourcetree_logo.png" alt="Sourcetree">
+            <div class="img-box">
+              <img src="assets/img/skills/git_logo.png" alt="Git" style="max-width: 120px;">
+              <img src="assets/img/skills/github_logo.png" alt="GitHub">
+              <img src="assets/img/skills/sourcetree_logo.png" alt="Sourcetree">
+            </div>
           </div>
         </div>
 
@@ -213,7 +241,7 @@
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="201" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="231" data-purecounter-duration="1" class="purecounter"></span>
             <p>Since I started studying</p>
           </div>
 
@@ -223,12 +251,12 @@
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="443" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="531" data-purecounter-duration="1" class="purecounter"></span>
             <p>Commits</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="59" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
             <p>Posts</p>
           </div>
 

@@ -37,6 +37,129 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    /* font */
+    /* Add Font by narae */
+    @font-face {
+      font-family: 'D2Coding';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'SUIT-Regular';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      font-family: 'SUIT-Regular';
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'SUIT-Regular';
+      font-weight: 900;
+    }
+    
+    #main {
+      margin-top: 0;
+    }
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    /* 프로젝트 상단 요약 */
+    .portfolio-info span {
+      color: red;
+    }
+
+    /* 주요 구현 기능 슬라이드 */
+    .portfolio-details-slider .swiper-button-prev,
+    .portfolio-details-slider .swiper-button-next,
+    .function-slider .swiper-button-prev,
+    .function-slider .swiper-button-next {
+      background: rgba(0, 0, 0, .5);
+      padding: 15px;
+      border-radius: 50%;
+      color: #FFF;
+      width: 0;
+      height: 0;
+    }
+
+    .portfolio-details-slider .swiper-button-next::after,
+    .portfolio-details-slider .swiper-button-prev::after {
+      font-size: 10px;
+    }
+
+    .function-slider .swiper-button-next::after,
+    .function-slider .swiper-button-prev::after {
+      font-size: 15px;
+    }
+
+    .swiper-pagination-bullet {
+      background: #999;
+    }
+
+
+    /* 산출물 img */
+    /* .row {
+      max-width: 100%;
+    }
+
+    .row > img {
+      width: 25%;
+    } */
+
+    #docs tr {
+      padding: 10px;
+    }
+
+    #docs th {
+      text-align: center;
+    }
+
+    #docs tr {
+      border-bottom: 1px solid #999;
+    }
+
+    #docs tr:last-child {
+      border-bottom: 0;
+    }
+
+    #docs tr:nth-child(5) > th:first-child {
+      border-bottom: 1px solid #999;
+    }
+
+    #docs th, #docs td {
+      border-right: 1px solid #999;
+    }
+
+    #docs th:last-child, #docs td:last-child {
+      border-right: 0;
+    }
+
+    #docs img {
+      max-width: 100%;
+    }
+
+    /* 빈칸 border 제거 */
+    #docs tr:nth-child(5) > th:nth-child(3),
+    #docs tr:nth-child(6) > td:nth-child(3),
+    #docs tr:nth-child(5) > th:nth-child(2),
+    #docs tr:nth-child(6) > td:nth-child(2) {
+      border-right: 0;
+    }
+
+    #docs tr:nth-child(5) {
+      border-bottom: 0;
+    }
+
+  </style>
 </head>
 
 <body>
@@ -49,46 +172,209 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/JavaConsoleToyProject.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/JavaConsoleToyProject.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/JavaConsoleToyProject.png" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
+          <div class="col-lg-7">
+            <div class="portfolio-description">
+              <h2>도서 관리 프로그램</h2>
             </div>
-          </div>
 
-          <div class="col-lg-4">
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>프로젝트명</strong>: 쌍용 도서관</li>
+                <li><strong>분류</strong>: Java Console Project</li>
+                <li><strong>주제</strong>: Java Console창을 활용하여 도서관에서 사용할 수 있는 도서 관리 프로그램을 제작하고자 하였습니다.</li>
+                <li><strong>개발 환경</strong>: <span>Java 11</span>, Eclipse, Draw.io, Google Drive</li>
+                <li><strong>사용 기술</strong>: <span>파일 입출력 기반 데이터 처리</span></li>
+                <li><strong>주요 기능</strong>: 모든 사용자를 위한 회원가입·도서 조회 기능, 사용자의 도서 대출·반납·희망 도서 신청·나의 대출 이력 조회·비밀번호 변경 기능, 관리자의 도서 추가·삭제·연체 회원 조회·희망 도서 신청 목록 조회 기능</li>
+                <li><strong>담당 업무</strong>: 사용자의 도서 대출, 관리자의 도서 추가 기능</li>
+                <li><strong>획득 역량</strong>: 프로그램 개발 절차, 파일 입출력 기반 데이터 처리, MVC 패턴에 기반한 패키지 설계</li>
+                <!-- <li><strong>프로젝트 기간</strong>: </li> -->
+                <li><strong>GitHub</strong>: <a href="https://github.com/NaraeP/ToyProject-library" target="_blank">https://github.com/NaraeP/ToyProject-library</a></li>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
+          </div><!-- end of div.col-lg-7 -->
 
-        </div>
+          <div class="col-lg-5 vertical-center">
+            <div>
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/projects/JavaConsoleToyProject.png" alt="">
+                  </div>
+                  
+                </div>
+                <!-- 기능 구현 슬라이드 네비게이션 버튼 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+              </div><!-- end of div.swiper -->
+            </div>
+          </div><!-- end of div.col-lg-5 -->
+
+        </div><!-- end of div.row -->
+
+        <div class="row gy-4">
+
+          <!-- 기획 배경 -->
+          <!-- <div class="project-desc">
+            <h3>기획 배경</h3>
+            <p>: </p>
+          </div> -->
+
+          <!-- 구현 목표 -->
+          <!-- <div class="project-desc">
+            <h3>구현 목표</h3>
+            <ol>
+              <li>
+                <strong>사용자/관리자별 기능 구현</strong>
+                <ol style="list-style-type: lower-alpha;">
+                  <li>
+                    사용자: 
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li>
+                    관리자: 
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <strong>MVC Architecture Pattern 적용</strong>
+                <ul>
+                  <li>MVC 패턴에서 착안하여 View, Dao, Vo로 패키지를 구분하여 설계</li>
+                </ul>
+              </li>
+            </ol>
+          </div> -->
+
+          <!-- 업무 분담 -->
+          <!-- <div class="project-desc">
+            <h3>업무 분담</h3>
+            <ul>
+              <li>김수진: </li>
+              <li><strong>박나래: </strong></li>
+              <li>염현빈: </li>
+              <li>차수민: </li>
+              <li>허수경: </li>
+            </ul>
+          </div> -->
+
+        <!-- </div> -->
+
+        <!-- 주요 구현 기능 -->
+        <!-- <div class="row gy-4">
+          <div class="project-desc">
+            <h3>주요 구현 기능</h3>
+            <p style="font-size: .8rem; color: #888;">❗하단 슬라이드의 좌/우 버튼을 클릭하여 구현 기능을 확인할 수 있습니다.</p>
+
+            <div class="function-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <table class="functions">
+                    <tr>
+                      <th colspan="2">관리자 기능 - 증명서 발급 신청 승인</th>
+                    </tr>
+                    <tr>
+                      <td><img src="assets/img/projects/erp/[관리자]증명서발급신청승인.png" alt=""></td>
+                      <td>
+                        <ul>
+                          <li></li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+              </div> -->
+
+              <!-- 기능 구현 슬라이드 네비게이션 버튼 -->
+              <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+
+              <!-- pagination -->
+              <!-- <div class="function-swiper-pagination"></div> -->
+
+            <!-- </div>
+
+          </div>
+        </div> -->
+
+        <!-- 산출물 -->
+        <!-- <div class="row gy-4">
+          <div class="project-desc">
+            <h3>산출물</h3>
+            <ul>
+              <li>기획서 (3장)</li>
+              <li>요구분석서 (10장)</li>
+              <li>순서도</li>
+              <li>화면 설계서 (42장)</li>
+              <li>기능명세서 (22장)</li>
+              <li>데이터 관계도</li>
+              <li>PPT</li>
+              <li>요약본 (5장)</li>
+            </ul>
+            <table id="docs">
+              <tr>
+                <th>기획서</th>
+                <th>요구분석서</th>
+                <th>순서도</th>
+              </tr>
+              <tr>
+                <td><img src="assets/img/projects/erp/기획서.PNG" alt=""></td>
+                <td><img src="assets/img/projects/erp/요구분석서.PNG" alt=""></td>
+                <td><img src="assets/img/projects/erp/순서도.PNG" alt=""></td>
+              </tr>
+              <tr>
+                <th>화면 설계서</th>
+                <th>기능명세서</th>
+                <th>데이터관계도</th>
+              </tr>
+              <tr>
+                <td><img src="assets/img/projects/erp/화면설계서.PNG" alt=""></td>
+                <td><img src="assets/img/projects/erp/기능명세서.PNG" alt=""></td>
+                <td><img src="assets/img/projects/erp/데이터 관계도.PNG" alt=""></td>
+              </tr>
+              <tr>
+                <th>요약본</th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td><img src="assets/img/projects/erp/요약본.PNG" alt=""></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div> -->
+
+        <!-- 후기 -->
+        <!-- <div class="row gy-4">
+          <div class="project-desc">
+            <h3>개발 후기</h3>
+            <p>
+              &nbsp;
+            </p>
+
+            <h5>팀원으로서의 후기</h5>
+            <p>
+              &nbsp;
+            </p>
+
+            <h5>개발자 후기</h5>
+            <p>
+              &nbsp;
+            </p>
+          </div>
+        </div> -->
 
       </div>
     </section><!-- End Portfolio Details Section -->
@@ -110,6 +396,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Script -->
+  <script>
+
+  </script>
 
 </body>
 

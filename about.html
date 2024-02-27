@@ -54,23 +54,12 @@
       font-weight: 600;
     }
 
-    /* #about-me {
-      width: 70%;
-      margin: 0 auto;
-    } */
-
-    /* @media (min-width: 975px) {
-      #first-page {
-        height: 100vh;
-      }
-    } */
-
     .row.about {
       padding-top: 60px;
     }
 
     /* 반응형 */
-    @media (min-width: 992px) {
+    /* @media (min-width: 992px) {
       #about-me {
         width: 70%;
         margin: 0 auto;
@@ -79,6 +68,17 @@
       .row.about {
         width: 70%;
         margin: 0 auto;
+      }
+    } */
+
+    #about-me {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 985px) {
+      #about-me {
+        width: 100%;
       }
     }
 
@@ -110,32 +110,6 @@
 
     .white-space {
       margin: 30px;
-    }
-
-    /* 첫페이지 화면 설정 */
-    #first-page {
-      position: relative;
-      height: 150vh;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-    }
-
-    #first-page .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
     }
   </style>
 </head>
@@ -190,37 +164,38 @@
                   <img src="assets/img/박나래.jpg" class="img-fluid" alt="">
                 </div>
               </div>
-              <div class="col-lg-8 pt-4 pt-lg-0 content">
-                <h4></h4>
-                <!-- <h3>I'm a passionate new web developer.</h3> -->
-                <p>
-                  안녕하세요! 배움을 즐기는 신입 개발자 박나래입니다.<br>
-                  생각을 현실로 구현할 수 있다는 개발의 매력에 빠져 개발자를 꿈꾸게 되었습니다. 사용자를 고려하는 웹 개발자가 되기 위해 모든 것에 호기심을 갖고 공부하며 하나하나 제대로 익히고 사용하려고 노력하고 있습니다.
-                </p>
-              </div>
-
-              <!-- <div class="col-lg-6">
-                <h3 class="resume-title">Profile</h3>
-                <div id="profile" class="resume-item">
-                  <p><b>Name: </b>박나래</p>
-                  <p><b>Phone: </b>+82 10 3004 4386</p>
-                  <p><b>Email: </b>naraep23@gmail.com</p>
+              <div class="col-lg-8 pt-4 pt-lg-0 content" style="display: flex; flex-direction: column; justify-content: space-around;">
+                <div style="padding-bottom: 20px;">
+                  <h4></h4>
+                  <!-- <h3>I'm a passionate new web developer.</h3> -->
+                  <p>
+                    안녕하세요! 배움을 즐기는 신입 개발자 박나래입니다.<br>
+                    생각을 현실로 구현할 수 있다는 개발의 매력에 빠져 개발자를 꿈꾸게 되었습니다. 사용자를 고려하는 웹 개발자가 되기 위해 모든 것에 호기심을 갖고 공부하며 하나하나 제대로 익히고 사용하려고 노력하고 있습니다.
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6" style="padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                    <h3 class="resume-title">Profile</h3>
+                    <div id="profile" class="resume-item">
+                      <p><b>Name: </b>박나래</p>
+                      <p><b>Phone: </b>+82 10 3004 4386</p>
+                      <p><b>Email: </b>naraep23@gmail.com</p>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-6" style="padding-bottom: calc(var(--bs-gutter-x) * .5);">
+                    <h3 class="resume-title">Certificate</h3>
+                    <div id="certificate" class="resume-item">
+                      <p><span>2022</span> 컴퓨터활용능력 1급 (국가기술자격)</p>
+                      <p><span>2021</span> 무역영어 1급 (국가공인자격)</p>
+                      <p><span>2020</span> 운전면허 2종 보통 (국가전문자격)</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-    
-              <div class="col-lg-6">
-                <h3 class="resume-title">Certificate</h3>
-                <div id="certificate" class="resume-item">
-                  <p><span>2022</span> 컴퓨터활용능력 1급 (국가기술자격)</p>
-                  <p><span>2021</span> 무역영어 1급 (국가공인자격)</p>
-                  <p><span>2020</span> 운전면허 2종 보통 (국가전문자격)</p>
-                </div>
-              </div> -->
-
-
             </div>
 
-            <div class="row about">
+            <!-- <div class="row about">
               <div class="col-lg-6">
                 <h3 class="resume-title">Profile</h3>
                 <div id="profile" class="resume-item">
@@ -238,7 +213,7 @@
                   <p><span>2020</span> 운전면허 2종 보통 (국가전문자격)</p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <a href="#second-page" class="to-next d-flex align-items-center justify-content-center" onclick="" id="scroll-btn"><i class="bi bi-arrow-down-short"></i></a>
         </div> <!-- End first-page section -->
